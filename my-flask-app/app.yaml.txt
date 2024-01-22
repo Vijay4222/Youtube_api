@@ -1,0 +1,16 @@
+service: my-flask-app
+
+provider:
+  name: aws
+  runtime: python3.8
+
+functions:
+  app:
+    handler: handler.app
+    events:
+      - http:
+          path: /
+          method: ANY
+      - http:
+          path: /{proxy+}
+          method: ANY

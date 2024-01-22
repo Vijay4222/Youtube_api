@@ -1,0 +1,7 @@
+{
+  "dev": {
+    "app_function": "your_flask_app.app",
+    "profile_name": "your_aws_profile",
+    "project_name": "your_project_name"
+  }
+}
